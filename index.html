@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    div{
+        background-color: aqua;
+        text-align: center;
+
+
+            }
+
+     h1{
+            color: green;
+        }
+        [class]{
+            color: blue;
+            font-size: 20px
+        }
+        [class="email"] {
+            color:red;
+        }
+         [class~=phone]{
+            color: orange;
+         }
+         [class|=password]{
+            color: green;
+         }
+         [class^=ye]{
+            color: brown;
+         }
+         [class$=ing]{
+            color:coral;
+         }
+         [class*=mitf]{
+            color: fuchsia;
+         }
+       
+</style>
+</head>
+<body>
+    <div>
+  <h1><u> Registration Form</u></h1>  
+        <form>
+            <label class="form">Name</label><br>
+            <input type="text"/><br><br>
+            <label class="email">Mail</label><br>
+            <input type="email"/><br><br>
+            <label class="phone number">mobile no</label><br>
+            <input type="tel" pattern="[0-9]{10}"/><br><br>
+            <label class="password-key">password</label><br>
+            <input type="password"/><br><br><br>
+            <label class="year">date</label>
+            <input type="date"/><br><br><br>
+            <label class="file adding">file upload:</label>
+            <input type="file"/><br><br><br>
+             <input class="check and submitform" type="submit"/>
+        </form>
+    </div>
+</body>
+</html> 
